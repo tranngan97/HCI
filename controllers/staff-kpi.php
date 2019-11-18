@@ -80,6 +80,7 @@ break;
 
     <div id="wrapper">
 
+<<<<<<< HEAD
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
         <li class="nav-item active">
@@ -132,6 +133,113 @@ break;
           </div>
         </li>
       </ul>
+||||||| 0e93639
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="../index-leader.php">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Quy Trình</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <a class="dropdown-item" href="login.html">Quản Lý</a>
+          <a class="dropdown-item" href="register.html">Tuyển Dụng</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Quản Lý</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <a class="dropdown-item" href="login.html">Nhân viên</a>
+          <a class="dropdown-item" href="register.html">Ứng Viên</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Thống Kê</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <a class="dropdown-item" href="login.html">Phòng ban</a>
+          <!-- <a class="dropdown-item" href="register.html">Nhân Viên</a> -->
+          <a class="dropdown-item" href="register.html">Cá Nhân</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>KPI</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <a class="dropdown-item" href="kpi-all.php">Phòng ban</a>
+          <a class="dropdown-item" href="staff-kpi.php">Nhân Viên</a>
+          <a class="dropdown-item" href="leader-kpi.php">Cá Nhân</a>
+        </div>
+      </li>
+    </ul>
+
+    <div id="content-wrapper">
+=======
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index-leader.php">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Quy Trình</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="login.html">Quản Lý</a>
+            <a class="dropdown-item" href="register.html">Tuyển Dụng</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Quản Lý</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="login.html">Nhân viên</a>
+            <a class="dropdown-item" href="register.html">Ứng Viên</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Thống Kê</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="login.html">Phòng ban</a>
+            <!-- <a class="dropdown-item" href="register.html">Nhân Viên</a> -->
+            <a class="dropdown-item" href="register.html">Cá Nhân</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>KPI</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="kpi-all.php">Phòng ban</a>
+            <a class="dropdown-item" href="staff-kpi.php">Nhân Viên</a>
+            <a class="dropdown-item" href="leader-kpi.php">Cá Nhân</a>
+          </div>
+        </li>
+      </ul>
+>>>>>>> af69ba66737ab86534b3010c73fe85bbb18d2df3
 
       <div id="content-wrapper">
         <div class="modal modal-example" tabindex="-1" role="dialog">

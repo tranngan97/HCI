@@ -82,6 +82,7 @@
           <a class="dropdown-item" href="register.html">Tuyển Dụng</a>
         </div>
       </li>
+<<<<<<< HEAD
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
@@ -103,6 +104,33 @@
           <!-- <a class="dropdown-item" href="register.html">Nhân Viên</a> -->
           <a class="dropdown-item" href="register.html">Cá Nhân</a>
         </div>
+||||||| 0e93639
+      <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Charts</span></a>
+=======
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Quản Lý</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <a class="dropdown-item" href="login.html">Nhân viên</a>
+          <a class="dropdown-item" href="register.html">Ứng Viên</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Thống Kê</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <a class="dropdown-item" href="controllers/thongke.php">Phòng ban</a>
+          <!-- <a class="dropdown-item" href="register.html">Nhân Viên</a> -->
+          <a class="dropdown-item" href="register.html">Cá Nhân</a>
+        </div>
+>>>>>>> af69ba66737ab86534b3010c73fe85bbb18d2df3
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
