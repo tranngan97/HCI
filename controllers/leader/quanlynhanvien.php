@@ -46,95 +46,83 @@
 
     <!-- Navbar -->
     <ul class="navbar-nav ml-auto ml-md-0">
-      <li id="name" style="color: white;"><p style="padding-top: 20%">BOSS</p></li>
-      <li class="nav-item dropdown no-arrow">
-        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-user-circle fa-fw"></i>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-          <a class="dropdown-item" href="#">Settings</a>
-          <a class="dropdown-item" href="#">Activity Log</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
-        </div>
-      </li>
-    </ul>
+      <li id="name" style="color: white;"><p style="padding-top: 20%">LEADER</li>
+        <li class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle fa-fw"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="#">Activity Log</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+          </div>
+        </li>
+      </ul>
 
-  </nav>
+    </nav>
 
-  <div id="wrapper">
+    <div id="wrapper">
 
-   <!-- Sidebar -->
-    <ul class="sidebar navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="../../index-leader.php">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span>
-        </a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Quy Trình</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="login.html">Quản Lý</a>
-          <a class="dropdown-item" href="register.html">Tuyển Dụng</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Quản Lý</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="quanlynhanvien.php">Nhân viên</a>
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="../../index-leader.php">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Quy Trình</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="login.html">Quản Lý</a>
+            <a class="dropdown-item" href="register.html">Tuyển Dụng</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Quản Lý</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+           <a class="dropdown-item" href="quanlynhanvien.php">Nhân viên</a>
           <a class="dropdown-item" href="quanlyungvien.php">Ứng Viên</a>
-          <a class="dropdown-item" href="quanlydangtuyen.php">Đăng tuyển</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Thống Kê</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="login.html">Phòng ban</a>
-          <!-- <a class="dropdown-item" href="register.html">Nhân Viên</a> -->
-          <a class="dropdown-item" href="register.html">Cá Nhân</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>KPI</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="kpi-all.php">Phòng ban</a>
-          <a class="dropdown-item" href="staff-kpi.php">Nhân Viên</a>
-          <a class="dropdown-item" href="leader-kpi.php">Cá Nhân</a>
-        </div>
-      </li>
-    </ul>
+          <a class="dropdown-item" href="quanlydangtuyen.php">Tuyển Dụng</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Thống Kê</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="login.html">Phòng ban</a>
+            <!-- <a class="dropdown-item" href="register.html">Nhân Viên</a> -->
+            <a class="dropdown-item" href="register.html">Cá Nhân</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>KPI</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="kpi-all.php">Phòng ban</a>
+            <a class="dropdown-item" href="staff-kpi.php">Nhân Viên</a>
+            <a class="dropdown-item" href="leader-kpi.php">Cá Nhân</a>
+          </div>
+        </li>
+      </ul>
 
-
-    <div id="content-wrapper">
-
-      <div class="container-fluid">
-
-        <!-- Breadcrumbs-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Quản lý nhân viên</a>
-          </li>
-        </ol>
-       
- <div id="content-wrapper">
+      <div id="content-wrapper">
 
       <div class="container-fluid">
         <div class="row">
           <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-shopping-cart"></i>
@@ -150,7 +138,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-shopping-cart"></i>
@@ -166,7 +154,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-shopping-cart"></i>
@@ -182,7 +170,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-shopping-cart"></i>
@@ -198,7 +186,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-shopping-cart"></i>
@@ -214,7 +202,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-shopping-cart"></i>
@@ -230,7 +218,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-shopping-cart"></i>
@@ -246,7 +234,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-shopping-cart"></i>
@@ -262,7 +250,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-shopping-cart"></i>
@@ -279,64 +267,63 @@
           </div>
       </div>
 
-      <!-- Sticky Footer -->
-      <footer class="sticky-footer">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright © Your Website 2019</span>
-          </div>
+          <!-- /.container-fluid -->
+
+          <!-- Sticky Footer -->
+          <footer class="sticky-footer">
+            <div class="container my-auto">
+              <div class="copyright text-center my-auto">
+                <span>Copyright © Your Website 2019</span>
+              </div>
+            </div>
+          </footer>
+
         </div>
-      </footer>
+        <!-- /.content-wrapper -->
 
-    </div>
-    <!-- /.content-wrapper -->
-
-  </div>
-  <!-- /#wrapper -->
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
-        </div>
       </div>
-    </div>
-  </div>
+      <!-- /#wrapper -->
 
-  <!-- Bootstrap core JavaScript-->
-  <script src="../../vendor/jquery/jquery.min.js"></script>
-  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+      </a>
 
-  <!-- Core plugin JavaScript-->
-  <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+      <!-- Logout Modal-->
+      <!-- Bootstrap core JavaScript-->
+      <script src="../../vendor/jquery/jquery.min.js"></script>
+      <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Page level plugin JavaScript-->
-  <script src="../../vendor/chart.js/Chart.min.js"></script>
-  <script src="../../vendor/datatables/jquery.dataTables.js"></script>
-  <script src="../../vendor/datatables/dataTables.bootstrap4.js"></script>
+      <!-- Core plugin JavaScript-->
+      <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for all pages-->
-  <script src="../../js/sb-admin.min.js"></script>
+      <!-- Page level plugin JavaScript-->
+      <script src="../../vendor/chart.js/Chart.min.js"></script>
+      <script src="../../vendor/datatables/jquery.dataTables.js"></script>
+      <script src="../../vendor/datatables/dataTables.bootstrap4.js"></script>
 
-  <!-- Demo scripts for this page-->
-  <script src="../../js/demo/datatables-demo.js"></script>
-  <script src="../../js/demo/chart-area-demo.js"></script>
+      <!-- Custom scripts for all pages-->
+      <script src="../../js/sb-admin.min.js"></script>
 
-</body>
+      <!-- Demo scripts for this page-->
+      <script src="../../js/demo/datatables-demo.js"></script>
+      <script src="../../js/demo/chart-area-demo.js"></script>
 
-</html>
+    </body>
+    </html>
+    <script type="text/javascript">
+        $('.button').on('click',function(e){
+          var $status = $(this).attr('id');
+          switch ($status) {
+            case 'todo':
+             $('.modal-example .modal-title').html('To Do List');
+              break;
+              case 'progress':
+             $('.modal-example .modal-title').html('In Progress List');
+              break;
+             case 'done':
+             $('.modal-example .modal-title').html('Done List');
+              break;
+          }
+        })
+    </script>

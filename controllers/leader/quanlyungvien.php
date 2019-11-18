@@ -1,3 +1,19 @@
+<!-- <?php 
+if (isset($_GET['status'])) {
+$status= $_GET['status'];
+switch ($status) {
+case 'todo':
+$title= "To Do List";
+break;
+case 'progress':
+$title= "In Progress List";
+break;
+case 'done':
+$title= "Done List";
+break;
+}
+}
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,560 +62,374 @@
 
     <!-- Navbar -->
     <ul class="navbar-nav ml-auto ml-md-0">
-      <li id="name" style="color: white;"><p style="padding-top: 20%">BOSS</p></li>
-      <li class="nav-item dropdown no-arrow">
-        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-user-circle fa-fw"></i>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-          <a class="dropdown-item" href="#">Settings</a>
-          <a class="dropdown-item" href="#">Activity Log</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
-        </div>
-      </li>
-    </ul>
+      <li id="name" style="color: white;"><p style="padding-top: 20%">LEADER</li>
+        <li class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle fa-fw"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="#">Activity Log</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+          </div>
+        </li>
+      </ul>
 
-  </nav>
+    </nav>
 
-  <div id="wrapper">
+    <div id="wrapper">
 
-     <!-- Sidebar -->
-    <ul class="sidebar navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="../../index-leader.php">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span>
-        </a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Quy Trình</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="login.html">Quản Lý</a>
-          <a class="dropdown-item" href="register.html">Tuyển Dụng</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Quản Lý</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="quanlynhanvien.php">Nhân viên</a>
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="../../index-leader.php">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Quy Trình</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="login.html">Quản Lý</a>
+            <a class="dropdown-item" href="register.html">Tuyển Dụng</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Quản Lý</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+           <a class="dropdown-item" href="quanlynhanvien.php">Nhân viên</a>
           <a class="dropdown-item" href="quanlyungvien.php">Ứng Viên</a>
-          <a class="dropdown-item" href="quanlydangtuyen.php">Đăng tuyển</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Thống Kê</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="login.html">Phòng ban</a>
-          <!-- <a class="dropdown-item" href="register.html">Nhân Viên</a> -->
-          <a class="dropdown-item" href="register.html">Cá Nhân</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>KPI</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="kpi-all.php">Phòng ban</a>
-          <a class="dropdown-item" href="staff-kpi.php">Nhân Viên</a>
-          <a class="dropdown-item" href="leader-kpi.php">Cá Nhân</a>
-        </div>
-      </li>
-    </ul>
+          <a class="dropdown-item" href="quanlydangtuyen.php">Tuyển Dụng</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Thống Kê</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="login.html">Phòng ban</a>
+            <!-- <a class="dropdown-item" href="register.html">Nhân Viên</a> -->
+            <a class="dropdown-item" href="register.html">Cá Nhân</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>KPI</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="kpi-all.php">Phòng ban</a>
+            <a class="dropdown-item" href="staff-kpi.php">Nhân Viên</a>
+            <a class="dropdown-item" href="leader-kpi.php">Cá Nhân</a>
+          </div>
+        </li>
+      </ul>
 
-    <div id="content-wrapper">
-
-      <div class="container-fluid">
-
-        <!-- Breadcrumbs-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Quản lý ứng viên</a>
-          </li>
-          
-        </ol>
-
-        
-        <!-- DataTables Example -->
-        <div class="card mb-3">
-          <div class="card-header">
-            <i class="fas fa-table"></i>
-            Hồ sơ ứng viên</div>
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                  <tr>
-                    <th>Tên ứng viên</th>
-                    <th>Vị trí ứng tuyển</th>
-                    <th>Phòng ban</th>
-                    <th>Trạng thái</th>
-                    <th> </th>
-                   
-                  </tr>
-                </thead>
-                <tfoot>
-                  <tr>
-                    <th>Tên ứng viên</th>
-                    <th>Vị trí ứng tuyển</th>
-                    <th>Phòng ban</th>
-                    <th>Trạng thái</th>
-                    <th> </th>
-                    
-                  </tr>
-                </tfoot>
-                <tbody>
-                  <tr>
-                    <td>Đặng Thị Hằng</td>
-                    <td>Chuyên viên tuyển dụng</td>
-                    <td>P.Nhân sự</td>
-                    <td>Chờ xét duyệt</td>
-                    <td>
-                      <button name="button" type="button">Chi tiết</button>
-                    </td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Trần Thị Ngân</td>
-                    <td>Quản trị hành chính-nhân sự</td>
-                    <td>P.Nhân sự</td>
-                    <td>Chờ xét duyệt</td>
-                    <td>
-                     <button name="button" type="button">Chi tiết</button>
-                   </td>
-                  </tr>
-                  <tr>
-                    <td>Trần Văn Dũng</td>
-                    <td>Kế toán viên</td>
-                    <td>P.Kế toán</td>
-                    <td>Đã xét duyệt</td>
-                    <td>
-                      <button name="button" type="button">Chi tiết</button>
-                    </td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Nguyễn Văn Hiếu</td>
-                    <td>Kế toán viên</td>
-                    <td>P.Kế toán</td>
-                    <td>Chờ xét duyệt</td>
-                    <td>
-                      <button name="button" type="button">Chi tiết</button>
-                    </td>
-                   
-                  </tr>
-                  <tr>
-                    <td>Đặng Văn Đạt</td>
-                    <td>Chuyên viên tuyển dụng</td>
-                    <td>P.Nhân sự</td>
-                    <td>Đã xét duyệt</td>
-                    <td>
-                      <button name="button" type="button">Chi tiết</button>
-                    </td>
-                   </tr>
-                  <tr>
-                    <td>Đặng Thị Khuyên</td>
-                    <td>Chuyên viên tuyển dụng</td>
-                    <td>P.Nhân sự</td>
-                    <td>Đã xét duyệt</td>
-                    <td>
-                      <button name="button" type="button">Chi tiết</button>
-                    </td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Nguyễn Văn Nam</td>
-                    <td>Kế toán trưởng</td>
-                    <td>P.Kế toán</td>
-                    <td>Chờ xét duyệt</td>
-                    <td>
-                      <button name="button" type="button">Chi tiết</button>
-                    </td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Ngô Diệc Phàm</td>
-                    <td>Dược sĩ</td>
-                    <td>P.Sản Xuất</td>
-                    <td>Đã xét duyệt</td>
-                    <td>
-                      <button name="button" type="button">Chi tiết</button>
-                    </td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Nguyễn Văn Khải</td>
-                    <td>Nhân viên sales</td>
-                    <td>P.kinh doanh</td>
-                    <td>Chờ xét duyệt</td>
-                    <td>
-                      <button name="button" type="button">Chi tiết</button>
-                    </td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Trần Văn Nam</td>
-                    <td>Nhân viên Marketing</td>
-                    <td>P.Kinh doanh</td>
-                    <td>Đã xét duyệt</td>
-                    <td>
-                      <button name="button" type="button">Chi tiết</button>
-                    </td>
-                 
-                  </tr>
-                  <tr>
-                    <td>Trần Văn Đông</td>
-                    <td>Quản lý sản xuất</td>
-                    <td>P.Sản xuất</td>
-                    <td>Chờ xét duyệt</td>
-                    <td>
-                      <button name="button" type="button">Chi tiết</button>
-                    </td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Nguyễn Hữu Nam</td>
-                    <td>nhân viên nghiên cứu dược</td>
-                    <td>P.Sản xuất</td>
-                    <td>Chờ xét duyệt</td>
-                    <td>
-                      <button name="button" type="button">Chi tiết</button>
-                    </td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Nguyễn Văn Long</td>
-                    <td>Nhân viên sales</td>
-                    <td>P.Kinh doanh</td>
-                    <td>Đã xét duyệt</td>
-                    <td>
-                      <button name="button" type="button">Chi tiết</button>
-                    </td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Đặng Văn Tuấn</td>
-                    <td>Nhân viên Marketing</td>
-                    <td>P.Kinh doanh</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Trần Tuấn</td>
-                    <td>Dược sĩ</td>
-                    <td>P.Sản xuất</td>
-                    <td>Chờ xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                  
-                  </tr>
-                  <tr>
-                    <td>Nguyễn Mạnh</td>
-                    <td>Nhân viên vận hành kho</td>
-                    <td>P.Logistic</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Trần Trang</td>
-                    <td>Nhân viên vận hành kho</td>
-                    <td>P.Logistic</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                   
-                  </tr>
-                  <tr>
-                    <td>Đặng Trang</td>
-                    <td>Nhân viên thu mua </td>
-                    <td>P.Logistic</td>
-                    <td>Chờ xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Trần Hà</td>
-                    <td>Nhân viên thu mua</td>
-                    <td>P.Logistic</td>
-                    <td>Chờ xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Nguyễn Hà</td>
-                    <td>Nhân viên giao nhận</td>
-                    <td>P.Logistic</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Trần Thảo</td>
-                    <td>Dược sĩ</td>
-                    <td>P.Sản Xuất</td>
-                    <td>Chờ xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Phạm Thảo</td>
-                    <td>Nhân viên giao nhận</td>
-                    <td>P.Logistic</td>
-                    <td>Chờ xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Nguyễn Ngân</td>
-                    <td>Nhân viên chăm sóc khách hàng</td>
-                    <td>P.Logistic</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Trần Hiếu</td>
-                    <td>Nhân viên chăm sóc khách hàng</td>
-                    <td>P.Logistic</td>
-                    <td>Chưa xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Angelica Ramos</td>
-                    <td>Trưởng phòng kinh doanh</td>
-                    <td>P.Kinh doanh</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Gavin Joyce</td>
-                    <td>Nhân viên Marketing</td>
-                    <td>P.logistic</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Jennifer Chang</td>
-                    <td>Dược sĩ</td>
-                    <td>P.Sản xuất</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Phạm Sơn</td>
-                    <td>Kế toán viên</td>
-                    <td>P.Kế toán</td>
-                    <td>Chờ xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Fiona Green</td>
-                    <td>Chuyên viên tuyển dụng</td>
-                    <td>P.Nhân sự</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                   
-                  </tr>
-                  <tr>
-                    <td>Trần Sơn</td>
-                    <td>Nhân viên sales</td>
-                    <td>P.Kinh doanh</td>
-                    <td>Chơ xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Michelle House</td>
-                    <td>Kế toán trưởng</td>
-                    <td>Phòng kế toán</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Suki Burks</td>
-                    <td>Chuyên viên tuyển dụng</td>
-                    <td>P.Nhân sự</td>
-                    <td>Chờ xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Prescott Bartlett</td>
-                    <td>Chuyên viên tuyển dụng</td>
-                    <td>P.Nhân sự</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Nguyễn Văn Dũng</td>
-                    <td>Nhân viên chăm sóc khách hàng</td>
-                    <td>P.Logistic</td>
-                    <td>Chờ xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Hiếu Trần</td>
-                    <td>Nhân viên sales</td>
-                    <td>P.Logistic</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  
-                  
-                  <tr>
-                    <td>Jennifer Acosta</td>
-                    <td>Nhân viên thu mua</td>
-                    <td>P.Logistic</td>
-                    <td>Chờ xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Cara Stevens</td>
-                    <td>Nhân viên sales</td>
-                    <td>P.Sản xuất</td>
-                    <td>Chờ xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Hermione Butler</td>
-                    <td>Quản lý chất lượng</td>
-                    <td>P.Sản xuất</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Mạnh Nguyễn</td>
-                    <td>Quản lý sản xuất</td>
-                    <td>P.Sản xuất</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Jonas Alexander</td>
-                    <td>Nhân viên Marketing</td>
-                    <td>P.Logistic</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Shad Decker</td>
-                    <td>Nhân viên vận hành kho</td>
-                    <td>P.Logistic</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Michael Bruce</td>
-                    <td>Trưởng phòng kế hoạch</td>
-                    <td>P.Kế hoạch</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Donna Snider</td>
-                    <td>Trưởng phòng định hướng</td>
-                    <td>P.Định hướng</td>
-                    <td>Đã xét duyệt</td>
-                    <td><button name="button" type="button">Chi tiết</button></td>
-                    
-                  </tr>
-                </tbody>
-              </table>
+      <div id="content-wrapper">
+        <div class="modal modal-example" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ol>
+                  <li>Abcd</li>
+                  <li>Xyz</li>
+                  <li>!@#$</li>
+                  <li>%^&*</li>
+                </ol>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
             </div>
           </div>
-          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
         </div>
-
-      </div>
-      <!-- /.container-fluid -->
-
-
-        
-
-
-      <!-- Sticky Footer -->
-      <footer class="sticky-footer">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright © Your Website 2019</span>
+        <div class="container-fluid">
+          <!-- DataTables Example -->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+            Data Table Example</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Tên</th>
+                      <th>Vị Trí</th>
+                      <th>Phòng</th>
+                      <th>Chưa Làm</th>
+                      <th>Đang Làm</th>
+                      <th>Đã Làm</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Tiger Nixon</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Garrett Winters</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        </button>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>Ashton Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        </button>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>Cedric Kelly</td>
+                    <td>Senior Javascript Developer</td>
+                    <td>Edinburgh</td>
+                    <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        </button>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>Airi Satou</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        </button>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>Brielle Williamson</td>
+                    <td>Integration Specialist</td>
+                    <td>New York</td>
+                    <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        </button>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>Herrod Chandler</td>
+                    <td>Sales Assistant</td>
+                    <td>San Francisco</td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        </button>
+                      </td>
+                    </td>
+                    <tr>
+                      <td>Rhona Davidson</td>
+                      <td>Integration Specialist</td>
+                      <td>Tokyo</td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Colleen Hurst</td>
+                      <td>Javascript Developer</td>
+                      <td>San Francisco</td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Sonya Frost</td>
+                      <td>Software Engineer</td>
+                      <td>Edinburgh</td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
+                        </button>
+                      </td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
           </div>
+          <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                  <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- /.container-fluid -->
+
+          <!-- Sticky Footer -->
+          <footer class="sticky-footer">
+            <div class="container my-auto">
+              <div class="copyright text-center my-auto">
+                <span>Copyright © Your Website 2019</span>
+              </div>
+            </div>
+          </footer>
+
         </div>
-      </footer>
+        <!-- /.content-wrapper -->
 
-    </div>
-    <!-- /.content-wrapper -->
-
-  </div>
-  <!-- /#wrapper -->
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
-        </div>
       </div>
-    </div>
-  </div>
+      <!-- /#wrapper -->
 
-  <!-- Bootstrap core JavaScript-->
-  <script src="../../vendor/jquery/jquery.min.js"></script>
-  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+      </a>
 
-  <!-- Core plugin JavaScript-->
-  <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+      <!-- Logout Modal-->
+      <!-- Bootstrap core JavaScript-->
+      <script src="../../vendor/jquery/jquery.min.js"></script>
+      <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Page level plugin JavaScript-->
-  <script src="../../vendor/chart.js/Chart.min.js"></script>
-  <script src="../../vendor/datatables/jquery.dataTables.js"></script>
-  <script src="../../vendor/datatables/dataTables.bootstrap4.js"></script>
+      <!-- Core plugin JavaScript-->
+      <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for all pages-->
-  <script src="../../js/sb-admin.min.js"></script>
+      <!-- Page level plugin JavaScript-->
+      <script src="../../vendor/chart.js/Chart.min.js"></script>
+      <script src="../../vendor/datatables/jquery.dataTables.js"></script>
+      <script src="../../vendor/datatables/dataTables.bootstrap4.js"></script>
 
-  <!-- Demo scripts for this page-->
-  <script src="../../js/demo/datatables-demo.js"></script>
-  <script src="../../js/demo/chart-area-demo.js"></script>
+      <!-- Custom scripts for all pages-->
+      <script src="../../js/sb-admin.min.js"></script>
 
-</body>
+      <!-- Demo scripts for this page-->
+      <script src="../../js/demo/datatables-demo.js"></script>
+      <script src="../../js/demo/chart-area-demo.js"></script>
 
+    </body>
+    </html>
+    <script type="text/javascript">
+        $('.button').on('click',function(e){
+          var $status = $(this).attr('id');
+          switch ($status) {
+            case 'todo':
+             $('.modal-example .modal-title').html('To Do List');
+              break;
+              case 'progress':
+             $('.modal-example .modal-title').html('In Progress List');
+              break;
+             case 'done':
+             $('.modal-example .modal-title').html('Done List');
+              break;
+          }
+        })
+    </script>
