@@ -90,7 +90,7 @@
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
            <a class="dropdown-item" href="quanlynhanvien.php">Nhân viên</a>
           <a class="dropdown-item" href="quanlyungvien.php">Ứng Viên</a>
-          <a class="dropdown-item" href="quanlydangtuyen.php">Tuyển Dụng</a>
+          <a class="dropdown-item" href="quanlydangtuyen.php">Đăng Tuyển</a>
           </div>
         </li>
         <li class="nav-item dropdown">

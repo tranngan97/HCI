@@ -96,7 +96,7 @@ break;
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <a class="dropdown-item" href="login.html">Quản Lý</a>
-            <a class="dropdown-item" href="register.html">Tuyển Dụng</a>
+            <a class="dropdown-item" href="register.html">Đăng Tuyển</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -107,7 +107,7 @@ break;
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
            <a class="dropdown-item" href="leader/quanlynhanvien.php">Nhân viên</a>
           <a class="dropdown-item" href="leader/quanlyungvien.php">Ứng Viên</a>
-          <a class="dropdown-item" href="leader/quanlydangtuyen.php">Tuyển Dụng</a>
+          <a class="dropdown-item" href="leader/quanlydangtuyen.php">Đăng Tuyển</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -149,7 +149,7 @@ break;
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <a class="dropdown-item" href="login.html">Quản Lý</a>
-          <a class="dropdown-item" href="register.html">Tuyển Dụng</a>
+          <a class="dropdown-item" href="register.html">Đăng Tuyển</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -203,7 +203,7 @@ break;
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <a class="dropdown-item" href="login.html">Quản Lý</a>
-            <a class="dropdown-item" href="register.html">Tuyển Dụng</a>
+            <a class="dropdown-item" href="register.html">Đăng Tuyển</a>
           </div>
         </li>
         <li class="nav-item dropdown">
