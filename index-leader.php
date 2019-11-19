@@ -88,8 +88,9 @@
           <span>Quản Lý</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="login.html">Nhân viên</a>
-          <a class="dropdown-item" href="register.html">Ứng Viên</a>
+         <a class="dropdown-item" href="controllers/leader/quanlynhanvien.php">Nhân viên</a>
+          <a class="dropdown-item" href="controllers/leader/quanlyungvien.php">Ứng Viên</a>
+          <a class="dropdown-item" href="controllers/leader/quanlydangtuyen.php">Đăng Tuyển</a>
         </div>
       </li>
       <li class="nav-item dropdown">
