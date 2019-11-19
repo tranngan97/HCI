@@ -98,9 +98,8 @@
           <span>Thống Kê</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="login.html">Phòng ban</a>
-          <!-- <a class="dropdown-item" href="register.html">Nhân Viên</a> -->
-          <a class="dropdown-item" href="register.html">Cá Nhân</a>
+          <a class="dropdown-item" href="kpi-all.php">Phòng ban</a>
+          <a class="dropdown-item" href="staff-kpi.php">Nhân Viên</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -109,8 +108,8 @@
           <span>KPI</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="kpi-all.php">Phòng ban</a>
-          <a class="dropdown-item" href="staff-kpi.php">Nhân Viên</a>
+          <a class="dropdown-item" href="">Phòng ban</a>
+          <a class="dropdown-item" href="">Nhân Viên</a>
           <a class="dropdown-item" href="leader-kpi.php">Cá Nhân</a>
         </div>
       </li>

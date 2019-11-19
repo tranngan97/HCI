@@ -98,9 +98,8 @@
           <span>Thống Kê</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="controllers/thongke.php">Phòng ban</a>
-          <!-- <a class="dropdown-item" href="register.html">Nhân Viên</a> -->
-          <a class="dropdown-item" href="register.html">Cá Nhân</a>
+          <a class="dropdown-item" href="controllers/kpi-all.php">Phòng ban</a>
+          <a class="dropdown-item" href="controllers/staff-kpi.php">Nhân Viên</a>
         </div>
       </li>
       <li class="nav-item dropdown">
