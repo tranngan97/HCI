@@ -17,14 +17,18 @@
   <!-- Page level plugin CSS-->
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
+
+
+
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+  <script src="vendor/jquery/jquery.min.js"></script>
 
 </head>
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+  <nav class="navbar navbar-expand navbar-light bg-light static-top">
 
     <a class="navbar-brand mr-1" href="index.html"></a>
 
@@ -65,7 +69,13 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="sidebar navbar-nav">
+    <ul class="sidebar navbar-nav bg-light">
+      <li class="nav-item">
+          <a class="nav-link" href="index-leader.php">
+           <i class="fa fa-tablets fa-3x"></i>
+           <span>Dược Phẩm HTML</span>
+         </a>
+       </li>
       <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -719,7 +729,7 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+          <a class="btn btn-primary" href="index.html">Logout</a>
         </div>
       </div>
     </div>
@@ -743,7 +753,31 @@
   <!-- Demo scripts for this page-->
   <script src="js/demo/datatables-demo.js"></script>
   <script src="js/demo/chart-area-demo.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js">
 
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.sidebar').find('.active').each(function(){
+        $(this).find('a').css('color','red','!important');
+      });
+      $('.sidebar').find('.nav-item').not('.active').each(function(){
+        $(this).find('a').css('color','#479eb1','!important');
+      });
+      $('.nav-item').onclick(function(){
+          $(this).addClass('active');
+          $(this).children().css('color','red','!important');
+
+      });
+    });
+  </script>
 </body>
 
 </html>

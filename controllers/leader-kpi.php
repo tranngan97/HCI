@@ -19,12 +19,26 @@
 
   <!-- Custom styles for this template-->
   <link href="../css/sb-admin.css" rel="stylesheet">
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.sidebar').find('.active').each(function(){
+        $(this).find('a').css('color','red','!important');
+      });
+      $('.sidebar').find('.nav-item').not('.active').each(function(){
+        $(this).find('a').css('color','#479eb1','!important');
+      });
+      $('.nav-item').onclick(function(){
+          $(this).addClass('active');
+          $(this).children().css('color','red','!important');
 
+      });
+    });
+  </script>
 </head>
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+  <nav class="navbar navbar-expand navbar-light bg-light static-top">
 
     <a class="navbar-brand mr-1" href="index.html"></a>
 
@@ -65,7 +79,13 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="sidebar navbar-nav">
+    <ul class="sidebar navbar-nav bg-light">
+        <li class="nav-item">
+          <a class="nav-link" href="index-leader.php">
+           <i class="fa fa-tablets fa-3x"></i>
+           <span>Dược Phẩm HTML</span>
+         </a>
+       </li>
       <li class="nav-item active">
         <a class="nav-link" href="../index-leader.php">
           <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -78,9 +98,7 @@
           <span>Quy Trình</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="../login.html">Quản Lý</a>
-          <a class="dropdown-item" href="../register.html">Đăng Tuyển</a>
-
+          <a class="dropdown-item" href="../quytrinh.html">Quản Lý Nhân Sự</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -102,19 +120,18 @@
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <a class="dropdown-item" href="kpi-all.php">Phòng ban</a>
           <a class="dropdown-item" href="staff-kpi.php">Nhân Viên</a>
+          <a class="dropdown-item" href="job-list.php">Công Việc</a>
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>KPI</span>
-        </a>
-       <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="">Phòng ban</a>
-          <a class="dropdown-item" href="">Nhân Viên</a>
-          <a class="dropdown-item" href="leader-kpi.php">Cá Nhân</a>
-        </div>
-      </li>
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>KPI</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="leader-kpi.php">Cá Nhân</a>
+          </div>
+        </li>
     </ul>
 
     <div id="content-wrapper">
@@ -402,6 +419,30 @@
     $('.fa-star').on('click',function(){
       $(this).css('color','yellow');
       $(this).prevAll().css('color','yellow');
+    });
+  </script>
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.sidebar').find('.active').each(function(){
+        $(this).find('a').css('color','red','!important');
+      });
+      $('.sidebar').find('.nav-item').not('.active').each(function(){
+        $(this).find('a').css('color','#479eb1','!important');
+      });
+      $('.nav-item').onclick(function(){
+          $(this).addClass('active');
+          $(this).children().css('color','red','!important');
+
+      });
     });
   </script>
 </body>
