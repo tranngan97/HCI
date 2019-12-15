@@ -156,10 +156,10 @@
               <div class="card-body-icon">
                 <i class="fas fa-fw fa-shopping-cart"></i>
               </div>
-              <div class="mr-5">To Do</div>
+              <div class="mr-5">Chuẩn bị</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
+            <a class="card-footer text-white clearfix small z-1" href="job-todo.php">
+              <span class="float-left">Chi tiết</span>
               <span class="float-right">
                 <i class="fas fa-angle-right"></i>
               </span>
@@ -172,10 +172,10 @@
               <div class="card-body-icon">
                 <i class="fas fa-fw fa-shopping-cart"></i>
               </div>
-              <div class="mr-5">In Progress</div>
+              <div class="mr-5">Đang thực hiện</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="controllers/staff-kpi.php">
-              <span class="float-left">View Details</span>
+              <span class="float-left">Chi tiết</span>
               <span class="float-right">
                 <i class="fas fa-angle-right"></i>
               </span>
@@ -188,10 +188,10 @@
               <div class="card-body-icon">
                 <i class="fas fa-fw fa-shopping-cart"></i>
               </div>
-              <div class="mr-5">Overdue</div>
+              <div class="mr-5">Quá hạn</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
+            <a class="card-footer text-white clearfix small z-1" href="job-overdue.php">
+              <span class="float-left">Chi tiết</span>
               <span class="float-right">
                 <i class="fas fa-angle-right"></i>
               </span>

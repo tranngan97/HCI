@@ -43,7 +43,7 @@
 
   
 
-    <a class="navbar-brand mr-1" style="color: green;" href="index-leader.php">
+    <a class="navbar-brand mr-1" style="color: green;" href="../index-leader.php">
     
       <img src="../icon-4.png" width="30" height="30" class="d-inline-block align-top" alt="" >  Dược Phẩm Hồi Xuân
     </a>
@@ -100,8 +100,8 @@
           <span>Quản Lý</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="controllers/leader/quanlynhanvien.php">Nhân viên </a>
-          <a class="dropdown-item" href="job-list.php">Công Việc</a>
+          <a class="dropdown-item" href="../controllers/leader/quanlynhanvien.php">Nhân viên </a>
+          <a class="dropdown-item" href="../job-list.php">Công Việc</a>
           
         </div>
       </li>
@@ -140,6 +140,7 @@
   </ul>          
 
   <div id="content-wrapper">
+    
     <div class="modal modal-example" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -152,15 +153,83 @@
           </div>
           <div class="modal-body">
             <ol>
-              <li>Abcd</li>
-              <li>Xyz</li>
-              <li>!@#$</li>
-              <li>%^&*</li>
+              <li>Công việc: Quản lý nhân viên vệ sinh, tạp vụ công ty</li>
+              <li>Người thực hiện: Quý Văn Bửu</li>
+              <li>Chi tiết công việc: Thu thập bảng báo cáo vệ sinh hàng ngày của nhân viên vệ sinh công ty,kiểm tra kết quả và gửi cáo cáo hàng ngày cho trưởng phòng</li>
+              <li><a href="#">Bảng báo cáo vệ sinh hàng ngày</a></li>
             </ol>
           </div>
+
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content-wrapper">
+    
+    <div class="modal modal-example3" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ol>
+              <li>Công việc: Quản lý nhân viên vệ sinh, tạp vụ công ty</li>
+              <li><div class="form-group">
+  <label for="sel1">Người thực hiện</label>
+  <select class="form-control" id="sel1">
+    <option>Quý Văn Bửu</option>
+    <option>Nguyễn Văn Thị</option>
+    <option>Trần Thị Văn</option>
+    <option>Đau Văn Đớn</option>
+  </select>
+</div></li>
+              <li>Chi tiết công việc: Thu thập bảng báo cáo vệ sinh hàng ngày của nhân viên vệ sinh công ty,kiểm tra kết quả và gửi cáo cáo hàng ngày cho trưởng phòng</li>
+              <li><a href="#">Bảng báo cáo vệ sinh hàng ngày</a></li>
+            </ol>
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-success">Thay đổi</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal-example2" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ol>
+              <li>Công việc: Tìm kiếm hồ sơ phỏng vấn cho vị trí lao công</li>
+              <li>Người thực hiện: Nguyễn Văn Sửu</li>
+              <li>Chi tiết công việc: Đăng tin tuyển dụng, thu thập hồ sơ ứng viên và lọc hồ sơ để tìm hồ sơ phẩn vấn</li>
+              <li>Thời gian gửi yêu cầu: 9h30 AM ngày 8/12/2019</li>
+            </ol>
+          </div>
+
+          
+
+          <div class="modal-footer">
+            
             <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -186,129 +255,103 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Tiger Nixon</td>
-                  <td></td>
-                  <td></td>
+                  <td>Quản lý nhân viên vệ sinh, tạp vụ công ty</td>
+                  <td>Quý Văn Bửu</td>
+                  <td>Hàng ngày</td>
+                  
                   <td>
                     <button data-toggle="modal" data-target=".modal-example" id="todo" class="btn btn-info">Chi tiết
                     </button>
                   </td>
                   <td>
-                      <button data-toggle="modal" data-target=".modal-example" id="progress" class="btn btn-warning">Chỉnh sửa
+                      <button data-toggle="modal" data-target=".modal-example3" id="progress" class="btn btn-warning">Chỉnh sửa
                   </td>
                   <td>
-                    <button data-toggle="modal" data-target=".modal-example" id="done" class="btn btn-danger">Hủy
-                    </button>
+                    
                   </td>
                 </tr>
 
                 <tr>
-                  <td>Tiger Nixon</td>
-                  <td></td>
-                  <td></td>
+                  <td>Tìm kiếm hồ sơ phỏng vấn cho vị trí lao công</td>
+                  <td>Nguyễn Văn Sửu</td>
+                  <td>8/12/2019</td>
                   <td>
-                    <button data-toggle="modal" data-target=".modal-example" id="todo" class="btn btn-info">Chi tiết
+                    <button data-toggle="modal" data-target=".modal-example2" id="todo" class="btn btn-info">Chi tiết
                     </button>
                   </td>
                   <td>
-                      <button data-toggle="modal" data-target=".modal-example" id="progress" class="btn btn-warning">Chỉnh sửa
+                      <button data-toggle="modal" data-target=".modal-example4" id="progress" class="btn btn-warning">Chỉnh sửa
                   </td>
                   <td>
-                    <button data-toggle="modal" data-target=".modal-example" id="done" class="btn btn-danger">Hủy
-                    </button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Tiger Nixon</td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                    <button data-toggle="modal" data-target=".modal-example" id="todo" class="btn btn-info">Chi tiết
-                    </button>
-                  </td>
-                  <td>
-                      <button data-toggle="modal" data-target=".modal-example" id="progress" class="btn btn-warning">Chỉnh sửa
-                  </td>
-                  <td>
-                    <button data-toggle="modal" data-target=".modal-example" id="done" class="btn btn-danger">Hủy
+                    <button data-toggle="modal" data-target=".modal-example5" id="done" class="btn btn-danger">Hủy
                     </button>
                   </td>
                 </tr>
 
-                <tr>
-                  <td>Tiger Nixon</td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                    <button data-toggle="modal" data-target=".modal-example" id="todo" class="btn btn-info">Chi tiết
-                    </button>
-                  </td>
-                  <td>
-                      <button data-toggle="modal" data-target=".modal-example" id="progress" class="btn btn-warning">Chỉnh sửa
-                  </td>
-                  <td>
-                    <button data-toggle="modal" data-target=".modal-example" id="done" class="btn btn-danger">Hủy
-                    </button>
-                  </td>
-                </tr>
+                <div class="modal modal-example4" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ol>
+              <li>Công việc: Tìm kiếm hồ sơ phỏng vấn</li>
+              <li>Người thực hiện<input type="text" class="form-control" placeholder="Nhân viên"></li>
+              <li>Chi tiết công việc:
+              <input type="text" class="form-control" placeholder="Mô tả">
+              </li>
+              <li>Thời gian hoàn tất
+              <div class="form-group row">
+  
+  <div class="col-10">
+    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+  </div>
+              </a></li>
+            </ol>
+          </div>
 
-                <tr>
-                  <td>Tiger Nixon</td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                    <button data-toggle="modal" data-target=".modal-example" id="todo" class="btn btn-info">Chi tiết
-                    </button>
-                  </td>
-                  <td>
-                      <button data-toggle="modal" data-target=".modal-example" id="progress" class="btn btn-warning">Chỉnh sửa
-                  </td>
-                  <td>
-                    <button data-toggle="modal" data-target=".modal-example" id="done" class="btn btn-danger">Hủy
-                    </button>
-                  </td>
-                </tr>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Thay đổi</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                <tr>
-                  <td>Tiger Nixon</td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                    <button data-toggle="modal" data-target=".modal-example" id="todo" class="btn btn-info">Chi tiết
-                    </button>
-                  </td>
-                  <td>
-                      <button data-toggle="modal" data-target=".modal-example" id="progress" class="btn btn-warning">Chỉnh sửa
-                  </td>
-                  <td>
-                    <button data-toggle="modal" data-target=".modal-example" id="done" class="btn btn-danger">Hủy
-                    </button>
-                  </td>
-                </tr>
+    <div class="modal modal-example5" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              Bấm "Hủy bỏ" để hủy bỏ công việc, điều này sẽ được thông báo tới nhân viên thực hiện!
+          </div>
 
-                <tr>
-                  <td>Tiger Nixon</td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                    <button data-toggle="modal" data-target=".modal-example" id="todo" class="btn btn-info">Chi tiết
-                    </button>
-                  </td>
-                  <td>
-                      <button data-toggle="modal" data-target=".modal-example" id="progress" class="btn btn-warning">Chỉnh sửa
-                  </td>
-                  <td>
-                    <button data-toggle="modal" data-target=".modal-example" id="done" class="btn btn-danger">Hủy
-                    </button>
-                  </td>
-                </tr>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy bỏ</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+                
                 
               </tbody>
             </table>
           </div>
         </div>
-        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        <div class="card-footer small text-muted">Cập nhật 11:59 PM ngày 14/12/2019</div>
       </div>
       <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">

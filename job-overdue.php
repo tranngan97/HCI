@@ -12,14 +12,14 @@
   <title>Công Ty Dược Phẩm Hồi Xuân</title>
 
   <!-- Custom fonts for this template-->
-  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- Page level plugin CSS-->
-  <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="../css/sb-admin.css" rel="stylesheet">
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
       $('.sidebar').find('.active').each(function(){
@@ -62,7 +62,7 @@
     <!-- Navbar -->
 
     <ul class="navbar-nav ml-auto ml-md-0">
-      <li id="name" style="color: #998e8e;"><p style="padding-top: 7%">Trưởng Phòng </li>
+      <li id="name" style="color: #998e8e;"><p style="padding-top: 7%">Trưởng phòng </li>
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-circle fa-fw"></i>
@@ -100,7 +100,7 @@
           <span>Quản Lý</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="controllers/leader/quanlynhanvien.php">Nhân viên </a>
+          <a class="dropdown-item" href="quytrinh.html">Nhân viên </a>
           <a class="dropdown-item" href="job-list.php">Công Việc</a>
           
         </div>
@@ -111,7 +111,7 @@
           <span>Tuyển Dụng</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-         
+         <a class="dropdown-item" href="controllers/leader/quanlynhanvien.php">Nhân viên</a>
          <a class="dropdown-item" href="controllers/leader/quanlyungvien.php">Ứng Viên</a>
          <a class="dropdown-item" href="controllers/leader/quanlydangtuyen.php">Đăng Tuyển</a>
          <a class="dropdown-item" href="controllers/leader/quanlyphongvan.php">Phỏng Vấn</a>
@@ -139,7 +139,163 @@
     </li>
   </ul>          
 
-  
+
+  <div id="content-wrapper">
+        <div class="modal modal-example" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">Nội dung thay đổi
+              <input type="text" class="form-control" placeholder="Công việc"></li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Cập nhật</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal modal-example2" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">Nội dung thay đổi
+              <input type="text" class="form-control" placeholder="Nhân viên"></li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Cập nhật</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal modal-example3" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">Thời gian thay đổi
+              <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Cập nhật</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal modal-example4" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+              
+                       ---Nội dung: Đăng tin tuyển dụng, thu thập hồ sơ, và lựa chọn hồ sơ phù hợp
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Cập nhật</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal modal-example5" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">Bấm "Gửi" bên dưới nếu bạn chắc chắn muốn gửi thông báo nhắc nhờ quá hạn công việc
+              
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-danger">Gửi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <!-- DataTables Example -->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+            Danh sách công việc đang chuản bị thực hiện</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Công việc</th>
+                      <th>Người thực hiện</th>
+                      <th>Hạn quá trình thực hiện</th>
+                      <th>Mô tả công việc</th>
+                      <th>Thông báo quá hạn</th>
+                     
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Tìm kiếm hồ sơ phỏng vấn cho vị trí nhân viên phòng nhân sự
+                        </button></td>
+                      <td>Nguyễn Văn Sửu
+                        </button></td>
+                      <td>20/12/2019
+                        </button></td>
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example4" id="Chi tiết" class="btn btn-success">Mô tả
+                        
+                      </td>
+
+                      <td></button>
+                        <button data-toggle="modal" data-target=".modal-example5" id="Chi tiết" class="btn btn-danger">Gửi
+                        </button></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Cập nhật lúc 11:59 PM ngày 11/12/2019</div>
+          </div>
+
+
+
+    
     <!-- /.container-fluid -->
 
     <!-- Sticky Footer -->
@@ -183,23 +339,23 @@
 </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Page level plugin JavaScript-->
-    <script src="../vendor/chart.js/Chart.min.js"></script>
-    <script src="../vendor/datatables/jquery.dataTables.js"></script>
-    <script src="../vendor/datatables/dataTables.bootstrap4.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
 
     <!-- Demo scripts for this page-->
-    <script src="../js/demo/datatables-demo.js"></script>
-    <script src="../js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/datatables-demo.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
