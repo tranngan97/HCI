@@ -149,15 +149,15 @@
               </div>
               <div class="modal-body">
                 <ol>
-                  <li>Abcd</li>
-                  <li>Xyz</li>
-                  <li>!@#$</li>
-                  <li>%^&*</li>
+                  
+                  <li>Thời gian: Lúc 9h30 AM, ngày 14/12/2019</li>
+                  <li>Địa điểm: Phòng 306, Tòa  Summoner Rift, Đường Topmidbot</li>
+                  <li>Người phỏng vấn: Quý Văn Bửu</li>
                 </ol>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
               </div>
             </div>
           </div>
@@ -167,106 +167,131 @@
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-table"></i>
-            Quản lý tin đăng tuyển</div>
+            Danh sách phỏng vấn</div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>Ngày</th>
-                      <th>Số tin đã đăng</th>
-                      <th>Số hồ sơ ứng tuyển</th>
+                      <th>Tên ứng viên</th>
+                      <th>Vị trí ứng tuyển</th>
+                      <th>Phòng ban</th>
+                      <th>Thời gian</th>
                       <th> </th>
-                     
+                      
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>10/9/2019</td>
-                      <td>20</td>
-                      <td>50</td>
+                      <td>Nguyễn Văn An</td>
+                      <td>Kế toán trưởng</td>
+                      <td>P.Kế toán</td>
+                      <td>14/12/2019</td>
                       <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
+                        <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
+                          Chi tiết
                         </button>
                       </td>
+                      
                     </tr>
                     <tr>
-                      <td>11/9/2019</td>
-                      <td>15</td>
-                      <td>35</td>
+                      <td>Đỗ Thị Thu</td>
+                      <td>Nhân viên Sales</td>
+                      <td>P.Kinh doanh</td>
+                      <td>14/12/2019</td>
                       <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
+                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
+                          Chi tiết
                         </button>
                       </td>
-                    </tr>
+                       
+                  </tr>
                   <tr>
-                    <td>12/9/2019</td>
-                    <td>25</td>
-                    <td>70</td>
+                    <td>Nguyễn Tiến Dũng</td>
+                    <td>Nhân viên Marketing</td>
+                    <td>P.Kinh doanh</td>
+                    <td>14/12/2019</td>
                     <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
+                       <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
+                          Chi tiết
                         </button>
                       </td>
                   </tr>
                   <tr>
-                    <td>13/9/2019</td>
-                    <td>20</td>
-                    <td>50</td>
+                    <td> Lương Xuân Trường</td>
+                    <td>Chuyên viên tuyển dụng</td>
+                    <td>P.Nhân sự</td>
+                    <td>14/12/2019</td>
                     <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
+                       <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
+                          Chi tiết
+                        </button>
+                      </td>
+               </tr>
+                  <tr>
+                    <td>Phạm Tiến Đạt</td>
+                    <td>Nhân viên chăm sóc khách hàng</td>
+                    <td>P.logistic</td>
+                    <td>14/12/2019</td>
+                    <td>
+                       <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
+                          Chi tiết
                         </button>
                       </td>
                   </tr>
                   <tr>
-                    <td>14/9/2019</td>
-                    <td>50</td>
-                    <td>100</td>
+                    <td>Lê Thị Hà</td>
+                    <td>Dược sĩ</td>
+                    <td>Nhà SX</td>
+                    <td>14/12/2019</td>
                     <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
-                        </button>
-                      </td>
-                  <tr>
-                    <td>15/9/2019</td>
-                    <td>50</td>
-                    <td>50</td>
-                    <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
+                       <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
+                          Chi tiết
                         </button>
                       </td>
                   </tr>
                   <tr>
-                    <td>16/9/2019</td>
-                    <td>45</td>
-                    <td>30</td>
+                    <td>Nguyễn Hữu Nam</td>
+                    <td>Kế toán viên</td>
+                    <td>P.Kế toán</td>
+                    <td>14/12/2019</td>
+                    <td>
+                       <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
+                          Chi tiết
+                        </button>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td>Hà Thị Linh</td>
+                      <td>Nhân viên Marketing</td>
+                      <td>P.Kinh doanh</td>
+                      <td>14/12/2019</td>
                       <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
+                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
+                          Chi tiết
                         </button>
                       </td>
                     </tr>
                     <tr>
-                      <td>17/9/2019</td>
-                      <td>30</td>
-                      <td>30</td>
+                      <td>Nguyễn Hương Ly</td>
+                      <td>Nhân viên Sales</td>
+                      <td>P.Kinh doanh</td>
+                      <td>14/12/2019</td>
                       <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
+                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
+                          Chi tiết
                         </button>
                       </td>
                     </tr>
                     <tr>
-                      <td>18/9/2019</td>
-                      <td>30</td>
-                      <td>10</td>
+                      <td>Đặng Thị Khuyên</td>
+                      <td>Nhân viên chăm sóc khách hàng</td>
+                      <td>P.Logistic</td>
+                      <td>14/12/2019</td>
                       <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>19/9/2019</td>
-                      <td>50</td>
-                      <td>25</td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
+                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
+                          Chi tiết
                         </button>
                       </td>
                     </tr>
@@ -274,7 +299,7 @@
                 </table>
               </div>
             </div>
-            <div class="card-footer small text-muted">Cập nhật lúc 11:59 PM ngày 11/12/2019</div>
+            <div class="card-footer small text-muted">Cập nhật lúc 11:59 ngày 14/12/2019</div>
           </div>
           
         

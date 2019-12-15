@@ -60,18 +60,18 @@
 
     <!-- Navbar -->
     <ul class="navbar-nav ml-auto ml-md-0">
-      <li id="name" style="color: white;"><p style="padding-top: 20%">LEADER</li>
-      <li class="nav-item dropdown no-arrow">
-        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-user-circle fa-fw"></i>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-          <a class="dropdown-item" href="#">Settings</a>
-          <a class="dropdown-item" href="#">Activity Log</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
-        </div>
-      </li>
+      <li id="name" style="color: #998e8e;"><p style="padding-top: 7%">Trưởng phòng </li>
+        <li class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle fa-fw"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="#">Cài đặt</a>
+              
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Đăng Xuất</a>
+          </div>
+        </li>
     </ul>
 
   </nav>
@@ -183,11 +183,14 @@
                 </ul>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Chi tiết</button>
               </div>
             </div>
           </div>
+          
+
+
         </div>
         <!-- DataTables Example -->
         <div class="card mb-3">
@@ -209,7 +212,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Tiger Nixon</td>
+                    <td>Trần Văn A</td>
                     <td>Phòng Nhân Sự</td>
                     <td>5</td>
                     <td>2</td>
@@ -223,7 +226,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>Garrett Winters</td>
+                    <td>Nguyễn Thị B</td>
                     <td>Phòng Nhân Sự</td>
                     <td>7</td>
                     <td>0</td>
