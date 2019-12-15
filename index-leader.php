@@ -123,9 +123,8 @@
         <span>Thống Kê</span>
       </a>
       <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-        <a class="dropdown-item" href="controllers/kpi-all.php">Phòng ban</a>
-        <a class="dropdown-item" href="controllers/staff-kpi.php">Nhân Viên</a>
-        
+        <a class="dropdown-item" href="thongke_phongban.php">Phòng ban</a>
+
       </div>
     </li>
     <li class="nav-item dropdown">
@@ -135,6 +134,7 @@
       </a>
       <div class="dropdown-menu" aria-labelledby="pagesDropdown">
         <a class="dropdown-item" href="controllers/leader-kpi.php">Cá Nhân</a>
+        <a class="dropdown-item" href="controllers/boss/kpi_phongban.php">Phòng ban</a>
       </div>
     </li>
   </ul>          
@@ -189,6 +189,55 @@
             </div>
           </div>
         </div>
+
+        <!-- leader-message-->
+        <div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Thông báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+              <ul>
+                  <li><a href="controllers/staff-kpi.php">2 công việc đang thực hiện</a></li>
+                  <li> <a href="job-todo.php">2 công việc đang chuẩn bị</a></li>
+                  <li> <a href="job-overdue.php">1 công việc quá hạn</a></li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Thông báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+              <ul>
+                  <li><a href="controllers/boss/kpi_phongban.php">Phòng ban</a></li>
+                  <li><a href="controllers/leader-kpi.php">Nhân viên</a></li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- leader-message-->
         <!-- leader-message-->
           
         </div>  
@@ -200,9 +249,9 @@
               <div class="card-body-icon">
                 <i class="fas fa-fw fa-list"></i>
               </div>
-              <div class="mr-5">11 công việc đang thực...</div>
+              <div class="mr-5">2 công việc đang thực...</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
+            <a class="card-footer text-white clearfix small z-1" data-toggle="modal" data-target="#exampleModalScrollable1">
               <span class="float-left">Chi tiết</span>
               <span class="float-right">
                 <i class="fas fa-angle-right"></i>
@@ -216,10 +265,10 @@
               <div class="card-body-icon">
                 <i class="fas fa-fw fa-shopping-cart"></i>
               </div>
-              <div class="mr-5">123 New Orders!</div>
+              <div class="mr-5">Thống kê khả năng hoàn... </div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
+            <a class="card-footer text-white clearfix small z-1" href="thongke_phongban.php">
+              <span class="float-left">Chi tiết</span>
               <span class="float-right">
                 <i class="fas fa-angle-right"></i>
               </span>
@@ -232,10 +281,10 @@
               <div class="card-body-icon">
                 <i class="fas fa-fw fa-life-ring"></i>
               </div>
-              <div class="mr-5">13 New Tickets!</div>
+              <div class="mr-5">KPI</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
+            <a class="card-footer text-white clearfix small z-1" data-toggle="modal" data-target="#exampleModalScrollable2">
+              <span class="float-left">Chi tiết</span>
               <span class="float-right">
                 <i class="fas fa-angle-right"></i>
               </span>
@@ -245,7 +294,7 @@
       </div>
       <ol class="breadcrumb">
         
-        <li class="breadcrumb-item active">Biểu đồ thống kê...</li>
+        <li class="breadcrumb-item active">Biểu đồ thống kê doanh số công ty(tỷ đồng)</li>
       </ol>
       <!-- Area Chart Example-->
       <div class="card mb-3">
@@ -295,7 +344,7 @@
             });
           </script>
         </div>
-        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        <div class="card-footer small text-muted">Cập nhật 11:59 PM ngày 24/12/2019</div>
       </div>
 
       <!-- DataTables Example -->
@@ -446,7 +495,7 @@
             </table>
           </div>
         </div>
-        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        <div class="card-footer small text-muted">Cập nhật 11:59 PM ngày 24/12/2019</div>
       </div>
 
     </div>

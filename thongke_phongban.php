@@ -12,14 +12,14 @@
   <title>Công Ty Dược Phẩm Hồi Xuân</title>
 
   <!-- Custom fonts for this template-->
-  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- Page level plugin CSS-->
-  <link href="../../../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="../../../css/sb-admin.css" rel="stylesheet">
-  <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
       $('.sidebar').find('.active').each(function(){
@@ -45,7 +45,7 @@
 
     <a class="navbar-brand mr-1" style="color: green;" href="index-leader.php">
     
-      <img src="../../../icon-4.png" width="30" height="30" class="d-inline-block align-top" alt="" >  Dược Phẩm Hồi Xuân
+      <img src="icon-4.png" width="30" height="30" class="d-inline-block align-top" alt="" >  Dược Phẩm Hồi Xuân
     </a>
 
     
@@ -77,8 +77,6 @@
     </ul>
 
     </nav>
-
-    
 
     <div id="wrapper">
 
@@ -126,7 +124,6 @@
       </a>
       <div class="dropdown-menu" aria-labelledby="pagesDropdown">
         <a class="dropdown-item" href="controllers/kpi-all.php">Phòng ban</a>
-        <a class="dropdown-item" href="controllers/staff-kpi.php">Nhân Viên</a>
         
       </div>
     </li>
@@ -137,112 +134,160 @@
       </a>
       <div class="dropdown-menu" aria-labelledby="pagesDropdown">
         <a class="dropdown-item" href="controllers/leader-kpi.php">Cá Nhân</a>
+        <a class="dropdown-item" href="controllers/boss/kpi_phongban.php">Phòng ban</a>
       </div>
     </li>
-  </ul> 
+  </ul>          
 
   <div id="content-wrapper">
 
       <div class="container-fluid">
-        <h1 style="color: blue; font-size: 30px;text-transform: capitalize;">Phòng Logistic</h1>
-        <div class="dropdown">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Các phòng khác
-  </a>
-
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      <a class="dropdown-item" href="thongke_phongban-dinhhuong.php">P.Định Hướng</a>
-      <a class="dropdown-item" href="thongke_phongban-nhansu.php">P.Nhân Sự</a>
-      <a class="dropdown-item" href="thongke_phongban-hanhchinh.php">P.Hành Chính</a>
-      <a class="dropdown-item" href="thongke_phongban-kinhdoanh.php">P.Kinh Doanh</a>
-      <a class="dropdown-item" href="thongke_phongban-ketoan.php">P.Kế Toán</a>
-      <a class="dropdown-item" href="#">Nhà Sản Xuất</a>
-      <a class="dropdown-item" href="#">Hậu Cần - Hỗ Trợ</a>
-      <a class="dropdown-item" href="#">Kế Hoạch</a>
-      
-    </div>
-    <h3 style="color: green; font-size: 25px;text-transform: capitalize;margin-top: 40px">Bảng thống kê tỷ lệ hoàn thành công việc của phòng từng tuần trong </h3>
-  <div style="display:flex;">
-    <div style="margin-right:10px"> 
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Tháng 1
-      </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#">Tháng 1</a>
-          <a class="dropdown-item" href="#">Tháng 2</a>
-          <a class="dropdown-item" href="#">Tháng 3</a>
-          <a class="dropdown-item" href="#">Tháng 4</a>
-          <a class="dropdown-item" href="#">Tháng 5</a>
-          <a class="dropdown-item" href="#">Tháng 6</a>
-          <a class="dropdown-item" href="#">Tháng 7</a>
-          <a class="dropdown-item" href="#">Tháng 8</a>
-          <a class="dropdown-item" href="#">Tháng 9</a>
-          <a class="dropdown-item" href="#">Tháng 10</a>
-          <a class="dropdown-item" href="#">Tháng 11/a>
-          <a class="dropdown-item" href="#">Tháng 12</a>
-        </div>
-    </div>
-    <div>
-    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Năm 2019
-    </a>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#">2019</a>
-        <a class="dropdown-item" href="#">2018</a>
-        <a class="dropdown-item" href="#">2017</a>
-        <a class="dropdown-item" href="#">2016</a>
-        <a class="dropdown-item" href="#">2015</a>
-        <a class="dropdown-item" href="#">2014</a>
-        <a class="dropdown-item" href="#">2013</a>
+        <div class="row">
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-success o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-shopping-cart"></i>
+                </div>
+                <div class="mr-5">P. Định Hướng</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="controllers/boss/thongkephongban/thongkephongban_dinhhuong.php">
+                <span class="float-left">Chi tiết</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-success o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-shopping-cart"></i>
+                </div>
+                <div class="mr-5">P. Nhân Sự</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="controllers/kpi-all.php">
+                <span class="float-left">Chi tiết</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-success o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-shopping-cart"></i>
+                </div>
+                <div class="mr-5">P. Hành Chính</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="controllers/boss/thongkephongban/thongkephongban_hanhchinh.php">
+                <span class="float-left">Chi tiết</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-success o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-shopping-cart"></i>
+                </div>
+                <div class="mr-5">P. Kinh Doanh</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="controllers/boss/thongkephongban/thongkephongban_kinhdoanh.php">
+                <span class="float-left">Chi tiết</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-success o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-shopping-cart"></i>
+                </div>
+                <div class="mr-5">P. Kế Toán</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="controllers/boss/thongkephongban/thongkephongban_ketoan.php">
+                <span class="float-left">Chi tiết</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-success o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-shopping-cart"></i>
+                </div>
+                <div class="mr-5">P. Logistic</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="controllers/boss/thongkephongban/thongkephongban_logistic.php">
+                <span class="float-left">Chi tiết</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-success o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-shopping-cart"></i>
+                </div>
+                <div class="mr-5">Nhà SX</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="controllers/boss/thongkephongban/thongkephongban_nhasanxuat.php">
+                <span class="float-left">Chi tiết</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-success o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-shopping-cart"></i>
+                </div>
+                <div class="mr-5">Hậu Cần - Hỗ Trợ</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="controllers/boss/thongkephongban/thongkephongban_haucanhotro.php">
+                <span class="float-left">Chi tiết</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-success o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-shopping-cart"></i>
+                </div>
+                <div class="mr-5">Kế Hoạch</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="controllers/boss/thongkephongban/thongkephongbanke_hoach.php">
+                <span class="float-left">Chi tiết</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
       </div>
-      <h3 style="color: green; font-size: 25px;text-transform: capitalize;">Tháng 1 Năm 2019</h3>
-  </div>
-  </div>
-  
-
-</div>
-        <canvas id="myChart" style="max-width: 500px;"></canvas>
-        </div>
-          <h3 style="color: #078282; font-size: 25px;text-transform: capitalize;margin-top: 40px">Đồ thị biểu diễn mức độ hoàn thành công việc tính đến</h3>
-        <div>
-        <div style="display:flex;">
-    <div style="margin-right:10px"> 
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Quý 2
-      </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#">Quý 1</a>
-          <a class="dropdown-item" href="#">Quý 2</a>
-          <a class="dropdown-item" href="#">Quý 3</a>
-        </div>
-    </div>
-    <div>
-    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Năm 2019
-    </a>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#">2019</a>
-        <a class="dropdown-item" href="#">2018</a>
-        <a class="dropdown-item" href="#">2017</a>
-        <a class="dropdown-item" href="#">2016</a>
-        <a class="dropdown-item" href="#">2015</a>
-        <a class="dropdown-item" href="#">2014</a>
-        <a class="dropdown-item" href="#">2013</a>
-      </div>
-      <h3 style="color: #078282; font-size: 25px;text-transform: capitalize;">Quý 2 Năm 2019</h3>
-  </div>
-  </div>
-        
-        <canvas id="lineChart" style="max-width: 800px;"></canvas>
-</div>
-
-
-
-
-      </div>
-  
-
-  
     <!-- /.container-fluid -->
 
     <!-- Sticky Footer -->
@@ -286,23 +331,23 @@
 </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="../../../vendor/jquery/jquery.min.js"></script>
-    <script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Page level plugin JavaScript-->
-    <script src="../../../vendor/chart.js/Chart.min.js"></script>
-    <script src="../../../vendor/datatables/jquery.dataTables.js"></script>
-    <script src="../../../vendor/datatables/dataTables.bootstrap4.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
 
     <!-- Demo scripts for this page-->
-    <script src="../../../js/demo/datatables-demo.js"></script>
-    <script src="../../../js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/datatables-demo.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
@@ -326,71 +371,6 @@
 
       });
     });
-  </script>
-
-<script>
-    var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
-type: 'bar',
-data: {
-labels: ["Tuần 1", "Tuần 2", "Tuần 3", "Tuần 4"],
-datasets: [{
-label: 'Lượng công việc hoàn thành / chưa hoàn thành(%)',
-data: [100, 94, 82, 65, 2, 3],
-backgroundColor: [
-'rgba(255, 99, 132, 0.2)',
-'rgba(54, 162, 235, 0.2)',
-'rgba(255, 206, 86, 0.2)',
-'rgba(75, 192, 192, 0.2)',
-
-],
-borderColor: [
-'rgba(255,99,132,1)',
-'rgba(54, 162, 235, 1)',
-'rgba(255, 206, 86, 1)',
-'rgba(75, 192, 192, 1)',
-
-],
-borderWidth: 1
-}]
-},
-options: {
-scales: {
-yAxes: [{
-ticks: {
-beginAtZero: true
-}
-}]
-}
-}
-});
-  
-  </script>
-  <script>
-    //line
-var ctxL = document.getElementById("lineChart").getContext('2d');
-var myLineChart = new Chart(ctxL, {
-type: 'line',
-data: {
-labels: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7","Tháng 8", "Tháng 9","Tháng 10", "Tháng 11", "Tháng 12"],
-datasets: [{
-label: "Lượng công việc hoàn thành / chưa hoàn thành(%)",
-data: [65, 59, 80, 81, 56, 55],
-backgroundColor: [
-'rgba(105, 0, 132, .2)',
-],
-borderColor: [
-'rgba(200, 99, 132, .7)',
-],
-borderWidth: 1
-},
-
-]
-},
-options: {
-responsive: true
-}
-});
   </script>
   </body>
   </html>

@@ -100,8 +100,8 @@
           <span>Quản Lý</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="quytrinh.html">Nhân viên </a>
-          <a class="dropdown-item" href="controllers/job-list.php">Công Việc</a>
+          <a class="dropdown-item" href="controllers/leader/quanlynhanvien.php">Nhân viên </a>
+          <a class="dropdown-item" href="job-list.php">Công Việc</a>
           
         </div>
       </li>
@@ -111,7 +111,7 @@
           <span>Tuyển Dụng</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-         <a class="dropdown-item" href="controllers/leader/quanlynhanvien.php">Nhân viên</a>
+         
          <a class="dropdown-item" href="controllers/leader/quanlyungvien.php">Ứng Viên</a>
          <a class="dropdown-item" href="controllers/leader/quanlydangtuyen.php">Đăng Tuyển</a>
          <a class="dropdown-item" href="controllers/leader/quanlyphongvan.php">Phỏng Vấn</a>
@@ -123,9 +123,8 @@
         <span>Thống Kê</span>
       </a>
       <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-        <a class="dropdown-item" href="controllers/kpi-all.php">Phòng ban</a>
-        <a class="dropdown-item" href="controllers/staff-kpi.php">Nhân Viên</a>
-        
+        <a class="dropdown-item" href="thongke_phongban.php">Phòng ban</a>
+
       </div>
     </li>
     <li class="nav-item dropdown">
@@ -135,9 +134,10 @@
       </a>
       <div class="dropdown-menu" aria-labelledby="pagesDropdown">
         <a class="dropdown-item" href="controllers/leader-kpi.php">Cá Nhân</a>
+        <a class="dropdown-item" href="controllers/boss/kpi_phongban.php">Phòng ban</a>
       </div>
     </li>
-  </ul>          
+  </ul>           
 
   <div id="content-wrapper">
 
