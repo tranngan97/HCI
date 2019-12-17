@@ -96,10 +96,11 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Quy Trình</span>
+          <span>Quản Lý</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="quytrinh.html">Quản Lý Nhân Viên</a>
+          <a class="dropdown-item" href="Quanlynhanvien.php">Nhân Viên</a>
+          <a class="dropdown-item" href="../../job-list.php">Công việc</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -108,7 +109,6 @@
           <span>Tuyển Dụng</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-         <a class="dropdown-item" href="quanlynhanvien.php">Nhân viên</a>
          <a class="dropdown-item" href="quanlyungvien.php">Ứng Viên</a>
          <a class="dropdown-item" href="quanlydangtuyen.php">Đăng Tuyển</a>
          <a class="dropdown-item" href="quanlyphongvan.php">Phỏng Vấn</a>
@@ -120,9 +120,7 @@
         <span>Thống Kê</span>
       </a>
       <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-        <a class="dropdown-item" href="controllers/kpi-all.php">Phòng ban</a>
-        <a class="dropdown-item" href="controllers/staff-kpi.php">Nhân Viên</a>
-        <a class="dropdown-item" href="controllers/job-list.php">Công Việc</a>
+        <a class="dropdown-item" href="../../thongke_phongban.php">Phòng ban</a>
       </div>
     </li>
     <li class="nav-item dropdown">
@@ -131,7 +129,8 @@
         <span>KPI</span>
       </a>
       <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-        <a class="dropdown-item" href="controllers/leader-kpi.php">Cá Nhân</a>
+        <a class="dropdown-item" href="../leader-kpi.php">Cá Nhân</a>
+        <a class="dropdown-item" href="../../controllers/boss/kpi_phongban.php">Phòng Ban</a>
       </div>
     </li>
   </ul>     
@@ -141,7 +140,7 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">
+                <h5 class="modal-title">Danh sách công việc đang thực hiện
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
@@ -149,19 +148,46 @@
               </div>
               <div class="modal-body">
                 <ol>
-                  <li>Abcd</li>
-                  <li>Xyz</li>
-                  <li>!@#$</li>
-                  <li>%^&*</li>
+                  <li>Tìm kiếm hồ sơ phỏng vấn cho vị trí dược sĩ	</li>
+                  <li>Quản lý nhân viên vệ sinh, tạp vụ công ty</li>
+                 
                 </ol>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                
+                <a href="../../controllers/staff-kpi.php" class="btn btn-primary">Chi tiết</a>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="modal modal-example2" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Danh sách công việc đã quá hạn
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ol>
+                  <li>Tìm kiếm hồ sơ phỏng vấn cho vị trí vệ sinh	</li>
+                  <li>Quản lý nhân viên vệ sinh, tạp vụ công ty</li>
+                 
+                </ol>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                
+                <a href="../../job-overdue.php" class="btn btn-primary">Chi tiết</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="container-fluid">
           <!-- DataTables Example -->
           <div class="card mb-3">
@@ -176,187 +202,74 @@
                       <th>Tên</th>
                       <th>Vị Trí</th>
                       
-                      <th>Chưa Làm</th>
+                      
                       <th>Đang Làm</th>
                       <th>Hoàn Thành</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Tiger Nixon</td>
-                      <td></td>
+                      <td>Nguyễn Văn Sửu</td>
+                      <td>Nhân viên phòng Nhân sự</td>
+                      
                       
                       <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Đang thực hiện
                         </button>
                       </td>
                       <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        <button data-toggle="modal" data-target=".modal-example2" id="done" class="button btn-danger">Quá hạn
                         </button>
                       </td>
                     </tr>
                     <tr>
-                      <td>Garrett Winters</td>
-                      <td>Accountant</td>
+                      <td>Quý Văn Bửu</td>
+                      <td>Nhân viên phòng Nhân sự</td>
+                      
                       
                       <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Đang thực hiện
                         </button>
                       </td>
                       <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        <button data-toggle="modal" data-target=".modal-example2" id="done" class="button btn-danger">Quá hạn
                         </button>
                       </td>
                   </tr>
                   <tr>
-                    <td>Ashton Cox</td>
-                    <td>Junior Technical Author</td>
+                    <td>Đông Văn Tây</td>
+                    <td>Nhân viên phòng Nhân sự</td>
                     
-                    <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
-                        </button>
-                      </td>
-                  </tr>
-                  <tr>
-                    <td>Cedric Kelly</td>
-                    <td>Senior Javascript Developer</td>
                     
-                    <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Đang thực hiện
                         </button>
                       </td>
                       <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        <button data-toggle="modal" data-target=".modal-example2" id="done" class="button btn-danger">Quá hạn
                         </button>
                       </td>
                   </tr>
                   <tr>
-                    <td>Airi Satou</td>
-                    <td>Accountant</td>
+                    <td>Bắc Thị Nam</td>
+                    <td>Nhân viên phòng Nhân sự</td>
                     
-                    <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
-                        </button>
-                      </td>
-                  </tr>
-                  <tr>
-                    <td>Brielle Williamson</td>
-                    <td>Integration Specialist</td>
                    
-                    <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
+                      <td>
+                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Đang thực hiện
                         </button>
                       </td>
                       <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
+                        <button data-toggle="modal" data-target=".modal-example2" id="done" class="button btn-danger">Quá hạn
                         </button>
                       </td>
                   </tr>
-                  <tr>
-                    <td>Herrod Chandler</td>
-                    <td>Sales Assistant</td>
                   
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
-                        </button>
-                      </td>
-                    </td>
-                    <tr>
-                      <td>Rhona Davidson</td>
-                      <td>Integration Specialist</td>
-                      
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Colleen Hurst</td>
-                      <td>Javascript Developer</td>
-                      
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Sonya Frost</td>
-                      <td>Software Engineer</td>
-                     
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="todo" class="button btn-success">To Do
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="progress" class="button btn-primary">Progress
-                        </button>
-                      </td>
-                      <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="done" class="button btn-danger">Done
-                        </button>
-                      </td>
-                    </tr>
                   </tbody>
                 </table>
               </div>
             </div>
-            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+            <div class="card-footer small text-muted">Cập nhật 11:59 PM ngày 14/12/2019</div>
           </div>
           
         <!-- /.container-fluid -->
@@ -443,19 +356,4 @@
   </script>
   </body>
   </html>
-  <script type="text/javascript">
-    $('.button').on('click',function(e){
-      var $status = $(this).attr('id');
-      switch ($status) {
-        case 'todo':
-        $('.modal-example .modal-title').html('To Do List');
-        break;
-        case 'progress':
-        $('.modal-example .modal-title').html('In Progress List');
-        break;
-        case 'done':
-        $('.modal-example .modal-title').html('Done List');
-        break;
-      }
-    })
-  </script>
+  

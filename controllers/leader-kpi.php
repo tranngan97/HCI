@@ -9,8 +9,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Công Ty Dược Phẩm HTML</title>
-  </style>
+  <title>Công Ty Dược Phẩm Hồi Xuân</title>
+
   <!-- Custom fonts for this template-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
@@ -19,6 +19,7 @@
 
   <!-- Custom styles for this template-->
   <link href="../css/sb-admin.css" rel="stylesheet">
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
       $('.sidebar').find('.active').each(function(){
@@ -40,27 +41,28 @@
 
   <nav class="navbar navbar-expand navbar-light bg-light static-top">
 
-    <a class="navbar-brand mr-1" href="index.html"></a>
+  
+
+    <a class="navbar-brand mr-1" style="color: green;" href="../index-leader.php">
+    
+      <img src="../icon-4.png" width="30" height="30" class="d-inline-block align-top" alt="" >  Dược Phẩm Hồi Xuân
+    </a>
+
+    
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
     </button>
 
     <!-- Navbar Search -->
+    
     <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-primary" type="button">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
+      
     </form>
-
     <!-- Navbar -->
+
     <ul class="navbar-nav ml-auto ml-md-0">
-      <li id="name" style="color: #998e8e;"><p style="padding-top: 7%">Trưởng phòng </li>
+      <li id="name" style="color: #998e8e;"><p style="padding-top: 7%">Trưởng Phòng </li>
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-circle fa-fw"></i>
@@ -74,32 +76,25 @@
         </li>
     </ul>
 
-  </nav>
+    </nav>
 
-  <div id="wrapper">
+    
 
-    <!-- Sidebar -->
-    <ul class="sidebar navbar-nav bg-light">
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav bg-light">
         <li class="nav-item">
-          <a class="nav-link" href="index-leader.php">
+          <a class="nav-link" href="#">
            <i class="fa fa-tablets fa-3x"></i>
-           <span>Dược Phẩm HTML</span>
+           <span>Phòng Nhân Sự</span>
          </a>
        </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="../index-leader.php">
+       <li class="nav-item active">
+        <a class="nav-link" href="#">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span>
+          <span>Trưởng Phòng</span>
         </a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Quy Trình</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="../quytrinh.html">Quản Lý Nhân Sự</a>
-        </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -107,48 +102,56 @@
           <span>Quản Lý</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="leader/quanlynhanvien.php">Nhân viên</a>
-          <a class="dropdown-item" href="leader/quanlyungvien.php">Ứng Viên</a>
-          <a class="dropdown-item" href="leader/quanlydangtuyen.php">Đăng Tuyển</a>
+          <a class="dropdown-item" href="../controllers/leader/quanlynhanvien.php">Nhân viên </a>
+          <a class="dropdown-item" href="../job-list.php">Công Việc</a>
+          
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Thống Kê</span>
+          <span>Tuyển Dụng</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="kpi-all.php">Phòng ban</a>
-          <a class="dropdown-item" href="staff-kpi.php">Nhân Viên</a>
-          <a class="dropdown-item" href="job-list.php">Công Việc</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>KPI</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="leader-kpi.php">Cá Nhân</a>
-          </div>
-        </li>
-    </ul>
+         
+         <a class="dropdown-item" href="../controllers/leader/quanlyungvien.php">Ứng Viên</a>
+         <a class="dropdown-item" href="../controllers/leader/quanlydangtuyen.php">Đăng Tuyển</a>
+         <a class="dropdown-item" href="../controllers/leader/quanlyphongvan.php">Phỏng Vấn</a>
+       </div>
+     </li>
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Thống Kê</span>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+        <a class="dropdown-item" href="../thongke_phongban.php">Phòng ban</a>
+        
+        
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>KPI</span>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+        <a class="dropdown-item" href="../controllers/leader-kpi.php">Cá Nhân</a>
+        <a class="dropdown-item" href="../controllers/boss/kpi_phongban.php">Phòng ban</a>
+      </div>
+    </li>
+  </ul> 
 
-    <div id="content-wrapper">
+  <div id="content-wrapper">
 
       <div class="container-fluid">
 
         <!-- Breadcrumbs-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Dashboard</a>
-          </li>
-          <li class="breadcrumb-item active">Overview</li>
-        </ol>
+        
 
         <!-- Icon Cards-->
         <div class="row">
-          <div class="col-xl-12 col-sm-6 mb-3">
+          <!-- <div class="col-xl-12 col-sm-6 mb-3">
             <div class="card text-white bg-primary o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
@@ -163,7 +166,7 @@
                 </span>
               </a>
             </div>
-          </div>
+          </div> -->
           </div>
           <div class="modal modal-example" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
@@ -196,7 +199,7 @@
         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-table"></i>
-           Bảng Theo Dõi Tiến Độ Nhân Viên</div>
+           Bảng Theo Dõi KPi Nhân Viên</div>
           <div class="card-body">
             <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -218,11 +221,9 @@
                     <td>2</td>
                     <td>1</td>
                     <td>
-                      <i class="far fa-star" data-id="1"></i>
-                      <i class="far fa-star" data-id="2"></i>
-                      <i class="far fa-star" data-id="3"></i>
-                      <i class="far fa-star" data-id="4"></i>
-                      <i class="far fa-star" data-id="5"></i>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 83%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">0,83</div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -232,199 +233,133 @@
                     <td>0</td>
                     <td>0</td>
                      <td>
-                      <i class="far fa-star" data-id="1"></i>
-                      <i class="far fa-star" data-id="2"></i>
-                      <i class="far fa-star" data-id="3"></i>
-                      <i class="far fa-star" data-id="4"></i>
-                      <i class="far fa-star" data-id="5"></i>
+                     <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">1</div>
+                      </div>
                      </td>
                   </tr>
                   <tr>
-                    <td>Ashton Cox</td>
+                    <td>Nguyễn Văn Sửu</td>
                     <td>Phòng Nhân Sự</td>
                     <td>2</td>
                     <td>1</td>
                     <td>5</td>
                      <td>
-                       <i class="far fa-star" data-id="1"></i>
-                      <i class="far fa-star" data-id="2"></i>
-                      <i class="far fa-star" data-id="3"></i>
-                      <i class="far fa-star" data-id="4"></i>
-                      <i class="far fa-star" data-id="5"></i>
+                     <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">0,4</div>
+                      </div>
                      </td>
                   </tr>
                   <tr>
-                    <td>Cedric Kelly</td>
+                    <td>Trần Thị Bưởi</td>
                     <td>Phòng Nhân Sự</td>
                     <td>3</td>
                     <td>2</td>
                     <td>0</td>
                      <td>
-                        <i class="far fa-star" data-id="1"></i>
-                      <i class="far fa-star" data-id="2"></i>
-                      <i class="far fa-star" data-id="3"></i>
-                      <i class="far fa-star" data-id="4"></i>
-                      <i class="far fa-star" data-id="5"></i>
+                     <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">1</div>
+                      </div>
                      </td>
                   </tr>
                   <tr>
-                    <td>Airi Satou</td>
+                    <td>Lê Văn Luyện</td>
                     <td>Phòng Nhân Sự</td>
                     <td>4</td>
                     <td>2</td>
                     <td>0</td>
                      <td>
-                        <i class="far fa-star" data-id="1"></i>
-                      <i class="far fa-star" data-id="2"></i>
-                      <i class="far fa-star" data-id="3"></i>
-                      <i class="far fa-star" data-id="4"></i>
-                      <i class="far fa-star" data-id="5"></i>
+                     <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">1</div>
+                      </div>
                      </td>
                   </tr>
                   <tr>
-                    <td>Brielle Williamson</td>
+                    <td>Đồng Văn Dâm</td>
                     <td>Phòng Nhân Sự</td>
                     <td></td>
                     <td></td>
                     <td></td>
                      <td>
-                        <i class="far fa-star" data-id="1"></i>
-                      <i class="far fa-star" data-id="2"></i>
-                      <i class="far fa-star" data-id="3"></i>
-                      <i class="far fa-star" data-id="4"></i>
-                      <i class="far fa-star" data-id="5"></i>
+                     <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">0</div>
+                      </div>
                      </td>
                   </tr>
                   <tr>
-                    <td>Herrod Chandler</td>
-                   <td>Phòng Nhân Sự</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                     <td>
-                        <i class="far fa-star" data-id="1"></i>
-                      <i class="far fa-star" data-id="2"></i>
-                      <i class="far fa-star" data-id="3"></i>
-                      <i class="far fa-star" data-id="4"></i>
-                      <i class="far fa-star" data-id="5"></i>
-                     </td>
-                  </tr>
-                  <tr>
-                    <td>Rhona Davidson</td>
-                    <td>Phòng Nhân Sự</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                     <td>
-                        <i class="far fa-star" data-id="1"></i>
-                      <i class="far fa-star" data-id="2"></i>
-                      <i class="far fa-star" data-id="3"></i>
-                      <i class="far fa-star" data-id="4"></i>
-                      <i class="far fa-star" data-id="5"></i>
-                     </td>
-                  </tr>
-                  <tr>
-                    <td>Colleen Hurst</td>
-                    <td>Phòng Nhân Sự</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                     <td>
-                        <i class="far fa-star" data-id="1"></i>
-                      <i class="far fa-star" data-id="2"></i>
-                      <i class="far fa-star" data-id="3"></i>
-                      <i class="far fa-star" data-id="4"></i>
-                      <i class="far fa-star" data-id="5"></i>
-                     </td>
-                  </tr>
-                  <tr>
-                    <td>Sonya Frost</td>
-                   <td>Phòng Nhân Sự</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                     <td>
-                      <i class="far fa-star" data-id="1"></i>
-                      <i class="far fa-star" data-id="2"></i>
-                      <i class="far fa-star" data-id="3"></i>
-                      <i class="far fa-star" data-id="4"></i>
-                      <i class="far fa-star" data-id="5"></i>
-                     </td>
-                  </tr>
+                    
                 </tbody>
               </table>
             </div>
           </div>
-          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          <div class="card-footer small text-muted">Cập nhật 11:59 PM ngày 14/12/2019</div>
         </div>
 
       </div>
-      <!-- /.container-fluid -->
+  
 
-      <!-- Sticky Footer -->
-      <footer class="sticky-footer">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright © Your Website 2019</span>
-          </div>
+  
+    <!-- /.container-fluid -->
+
+    <!-- Sticky Footer -->
+    <footer class="sticky-footer">
+      <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+
+          <span><h2>Nhóm 2 - Phòng Nhân Sự<h2></span>
         </div>
-      </footer>
-
-    </div>
-    <!-- /.content-wrapper -->
+      </div>
+    </footer>
 
   </div>
-  <!-- /#wrapper -->
+  <!-- /.content-wrapper -->
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+</div>
+<!-- /#wrapper -->
 
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
-        </div>
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+  <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Chắc chắn đăng xuất?</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">Lựa chọn "Đăng xuất" bên dưới nếu bạn chắc chắn muốn thoát khỏi phiên làm việc hiện tại</div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng</button>
+        <a class="btn btn-primary" href="index.html">Đăng xuất</a>
       </div>
     </div>
   </div>
+</div>
 
   <!-- Bootstrap core JavaScript-->
   <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Core plugin JavaScript-->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Page level plugin JavaScript-->
-  <script src="../vendor/chart.js/Chart.min.js"></script>
-  <script src="../vendor/datatables/jquery.dataTables.js"></script>
-  <script src="../vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="../vendor/chart.js/Chart.min.js"></script>
+    <script src="../vendor/datatables/jquery.dataTables.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.js"></script>
 
-  <!-- Custom scripts for all pages-->
-  <script src="../js/sb-admin.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
 
-  <!-- Demo scripts for this page-->
-  <script src="../js/demo/datatables-demo.js"></script>
-  <script src="../js/demo/chart-area-demo.js"></script>
-  <script type="text/javascript">
-    $('.fa-star').on('click',function(){
-      $(this).css('color','yellow');
-      $(this).prevAll().css('color','yellow');
-    });
-  </script>
-   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js">
+    <!-- Demo scripts for this page-->
+    <script src="../js/demo/datatables-demo.js"></script>
+    <script src="../js/demo/chart-area-demo.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js">
@@ -448,6 +383,86 @@
       });
     });
   </script>
-</body>
 
-</html>
+<script>
+    var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+type: 'bar',
+data: {
+labels: ["Tuần 1", "Tuần 2", "Tuần 3", "Tuần 4"],
+datasets: [{
+label: 'Lượng công việc hoàn thành / chưa hoàn thành(%)',
+data: [100, 94, 82, 65, 2, 3],
+backgroundColor: [
+'rgba(255, 99, 132, 0.2)',
+'rgba(54, 162, 235, 0.2)',
+'rgba(255, 206, 86, 0.2)',
+'rgba(75, 192, 192, 0.2)',
+
+],
+borderColor: [
+'rgba(255,99,132,1)',
+'rgba(54, 162, 235, 1)',
+'rgba(255, 206, 86, 1)',
+'rgba(75, 192, 192, 1)',
+
+],
+borderWidth: 1
+}]
+},
+options: {
+scales: {
+yAxes: [{
+ticks: {
+beginAtZero: true
+}
+}]
+}
+}
+});
+  
+  </script>
+  <script>
+    //line
+var ctxL = document.getElementById("lineChart").getContext('2d');
+var myLineChart = new Chart(ctxL, {
+type: 'line',
+data: {
+labels: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7","Tháng 8", "Tháng 9","Tháng 10", "Tháng 11", "Tháng 12"],
+datasets: [{
+label: "Lượng công việc hoàn thành / chưa hoàn thành(%)",
+data: [65, 59, 80, 81, 56, 55],
+backgroundColor: [
+'rgba(105, 0, 132, .2)',
+],
+borderColor: [
+'rgba(200, 99, 132, .7)',
+],
+borderWidth: 1
+},
+
+]
+},
+options: {
+responsive: true
+}
+});
+  </script>
+  </body>
+  </html>
+  <script type="text/javascript">
+    $('.button').on('click',function(e){
+      var $status = $(this).attr('id');
+      switch ($status) {
+        case 'todo':
+        $('.modal-example .modal-title').html('To Do List');
+        break;
+        case 'progress':
+        $('.modal-example .modal-title').html('In Progress List');
+        break;
+        case 'done':
+        $('.modal-example .modal-title').html('Done List');
+        break;
+      }
+    })
+  </script>

@@ -143,7 +143,7 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">
+                <h5 class="modal-title">Chi tiết
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
@@ -151,15 +151,15 @@
               </div>
               <div class="modal-body">
                 <ol>
-                  <li>Abcd</li>
-                  <li>Xyz</li>
-                  <li>!@#$</li>
-                  <li>%^&*</li>
+                  <li>Loại hồ sơ: Hồ sơ phỏng vấn cho vị trí dược sĩ</li>
+                  <li>Ngày 10/9/2019</li>
+                  <li>Số hồ sơ ứng tuyển:35</li>
+                  
                 </ol>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                
               </div>
             </div>
           </div>
@@ -178,6 +178,7 @@
                       <th>Ngày</th>
                       <th>Số tin đã đăng</th>
                       <th>Số hồ sơ ứng tuyển</th>
+                      <th>Người đăng tuyển</th>
                       <th> </th>
                      
                     </tr>
@@ -187,6 +188,7 @@
                       <td>10/9/2019</td>
                       <td>20</td>
                       <td>50</td>
+                      <td>Nguyễn Văn Sửu</td>
                       <td>
                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
                         </button>
@@ -196,6 +198,7 @@
                       <td>11/9/2019</td>
                       <td>15</td>
                       <td>35</td>
+                      <td>Nguyễn Văn Sửu</td>
                       <td>
                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
                         </button>
@@ -205,6 +208,7 @@
                     <td>12/9/2019</td>
                     <td>25</td>
                     <td>70</td>
+                    <td>Nguyễn Văn Sửu</td>
                     <td>
                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
                         </button>
@@ -214,6 +218,7 @@
                     <td>13/9/2019</td>
                     <td>20</td>
                     <td>50</td>
+                    <td>Nguyễn Văn Sửu</td>
                     <td>
                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
                         </button>
@@ -223,6 +228,7 @@
                     <td>14/9/2019</td>
                     <td>50</td>
                     <td>100</td>
+                    <td>Nguyễn Văn Sửu</td>
                     <td>
                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
                         </button>
@@ -231,6 +237,7 @@
                     <td>15/9/2019</td>
                     <td>50</td>
                     <td>50</td>
+                    <td>Nguyễn Văn Sửu</td>
                     <td>
                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
                         </button>
@@ -240,6 +247,7 @@
                     <td>16/9/2019</td>
                     <td>45</td>
                     <td>30</td>
+                    <td>Nguyễn Văn Sửu</td>
                       <td>
                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
                         </button>
@@ -249,6 +257,7 @@
                       <td>17/9/2019</td>
                       <td>30</td>
                       <td>30</td>
+                      <td>Nguyễn Văn Sửu</td>
                       <td>
                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
                         </button>
@@ -258,6 +267,7 @@
                       <td>18/9/2019</td>
                       <td>30</td>
                       <td>10</td>
+                      <td>Nguyễn Văn Sửu</td>
                       <td>
                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
                         </button>
@@ -267,6 +277,7 @@
                       <td>19/9/2019</td>
                       <td>50</td>
                       <td>25</td>
+                      <td>Nguyễn Văn Sửu</td>
                       <td>
                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">Chi tiết
                         </button>

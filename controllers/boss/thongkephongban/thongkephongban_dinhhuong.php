@@ -43,7 +43,7 @@
 
   
 
-    <a class="navbar-brand mr-1" style="color: green;" href="index-leader.php">
+    <a class="navbar-brand mr-1" style="color: green;" href="../../../index-leader.php">
     
       <img src="../../../icon-4.png" width="30" height="30" class="d-inline-block align-top" alt="" >  Dược Phẩm Hồi Xuân
     </a>
@@ -151,14 +151,14 @@
   </a>
 
     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      <a class="dropdown-item" href="thongke_phongban-dinhhuong.php">P.Định Hướng</a>
-      <a class="dropdown-item" href="thongke_phongban-nhansu.php">P.Nhân Sự</a>
-      <a class="dropdown-item" href="thongke_phongban-hanhchinh.php">P.Hành Chính</a>
-      <a class="dropdown-item" href="thongke_phongban-kinhdoanh.php">P.Kinh Doanh</a>
-      <a class="dropdown-item" href="thongke_phongban-ketoan.php">P.Kế Toán</a>
-      <a class="dropdown-item" href="#">Nhà Sản Xuất</a>
-      <a class="dropdown-item" href="#">Hậu Cần - Hỗ Trợ</a>
-      <a class="dropdown-item" href="#">Kế Hoạch</a>
+    <a class="dropdown-item" href="thongkephongban_dinhhuong.php">P.Định Hướng</a>
+      <a class="dropdown-item" href="../kpi-all.php">P.Nhân Sự</a>
+      <a class="dropdown-item" href="thongkephongban_hanhchinh.php">P.Hành Chính</a>
+      <a class="dropdown-item" href="thongkephongban_kinhdoanh.php">P.Kinh Doanh</a>
+      <a class="dropdown-item" href="thongkephongban_ketoan.php">P.Kế Toán</a>
+      <a class="dropdown-item" href="thongkephongban_nhasanxuat">Nhà Sản Xuất</a>
+      <a class="dropdown-item" href="thongkephongban_haucanhotro">Hậu Cần - Hỗ Trợ</a>
+      <a class="dropdown-item" href="thongkephongbanke_hoach">Kế Hoạch</a>
       
     </div>
     <h3 style="color: green; font-size: 25px;text-transform: capitalize;margin-top: 40px">Bảng thống kê tỷ lệ hoàn thành công việc của phòng từng tuần trong </h3>

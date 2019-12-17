@@ -190,9 +190,7 @@
                       <td>P.Kế toán</td>
                       <td>Đã xét duyệt</td>
                       <td>
-                        <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
-                          Chi tiết
-                        </button>
+                      <a href="../../hosoxinviec.html" class="btn btn-success">Hồ sơ </a>
                       </td>
                       
                     </tr>
@@ -202,9 +200,7 @@
                       <td>P.Kinh doanh</td>
                       <td>Chờ xét duyệt</td>
                       <td>
-                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
-                          Chi tiết
-                        </button>
+                      <a href="../../hosoxinviec.html" class="btn btn-success">Hồ sơ </a>
                       </td>
                        
                   </tr>
@@ -214,9 +210,7 @@
                     <td>P.Kinh doanh</td>
                     <td>Đã xét duyệt</td>
                     <td>
-                       <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
-                          Chi tiết
-                        </button>
+                    <a href="../../hosoxinviec.html" class="btn btn-success">Hồ sơ </a>
                       </td>
                   </tr>
                   <tr>
@@ -225,9 +219,7 @@
                     <td>P.Nhân sự</td>
                     <td>Đã xét duyệt</td>
                     <td>
-                       <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
-                          Chi tiết
-                        </button>
+                    <a href="../../hosoxinviec.html" class="btn btn-success">Hồ sơ </a>
                       </td>
                </tr>
                   <tr>
@@ -236,9 +228,7 @@
                     <td>P.logistic</td>
                     <td>Chờ xét duyệt</td>
                     <td>
-                       <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
-                          Chi tiết
-                        </button>
+                    <a href="../../hosoxinviec.html" class="btn btn-success">Hồ sơ </a>
                       </td>
                   </tr>
                   <tr>
@@ -247,9 +237,7 @@
                     <td>Nhà SX</td>
                     <td>Đã xét duyệt</td>
                     <td>
-                       <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
-                          Chi tiết
-                        </button>
+                    <a href="../../hosoxinviec.html" class="btn btn-success">Hồ sơ </a>
                       </td>
                   </tr>
                   <tr>
@@ -258,9 +246,7 @@
                     <td>P.Kế toán</td>
                     <td>Đã xét duyệt</td>
                     <td>
-                       <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
-                          Chi tiết
-                        </button>
+                    <a href="../../hosoxinviec.html" class="btn btn-success">Hồ sơ </a>
                       </td>
                       
                     </tr>
@@ -270,9 +256,7 @@
                       <td>P.Kinh doanh</td>
                       <td>Chờ xét duyệt</td>
                       <td>
-                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
-                          Chi tiết
-                        </button>
+                      <a href="../../hosoxinviec.html" class="btn btn-success">Hồ sơ </a>
                       </td>
                     </tr>
                     <tr>
@@ -281,9 +265,7 @@
                       <td>P.Kinh doanh</td>
                       <td>Chờ xét duyệt</td>
                       <td>
-                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
-                          Chi tiết
-                        </button>
+                      <a href="../../hosoxinviec.html" class="btn btn-success">Hồ sơ </a>
                       </td>
                     </tr>
                     <tr>
@@ -292,9 +274,7 @@
                       <td>P.Logistic</td>
                       <td>Đã xét duyệt</td>
                       <td>
-                         <button data-toggle="modal" data-target=".modal-example" id="Chi tiết" class="button btn-success">
-                          Chi tiết
-                        </button>
+                      <a href="../../hosoxinviec.html" class="btn btn-success">Hồ sơ </a>
                       </td>
                     </tr>
                   </tbody>
